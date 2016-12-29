@@ -82,7 +82,6 @@
             strOutput += translateDigit(digit) + (digit !== '0' ? subScale[subScaleLevelIndex] : '');
             subScaleLevelIndex--;
         }
-        window.CP.exitedLoop(1);
         if (arrDigit.join('') === '10') {
             strOutput = strOutput.slice(-1);
         } else {
