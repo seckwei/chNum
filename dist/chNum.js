@@ -78,9 +78,6 @@
         var subScaleLevelIndex = arrDigit.length, intEndIndex = arrDigit.join('').search(/0+$/), strOutput = '';
         intEndIndex = intEndIndex === -1 ? arrDigit.length : intEndIndex;
         for (var digitIndex = 0; digitIndex < intEndIndex; digitIndex++) {
-            if (window.CP.shouldStopExecution(1)) {
-                break;
-            }
             var digit = arrDigit[digitIndex];
             strOutput += translateDigit(digit) + (digit !== '0' ? subScale[subScaleLevelIndex] : '');
             subScaleLevelIndex--;
